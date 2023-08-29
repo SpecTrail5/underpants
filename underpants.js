@@ -571,15 +571,18 @@ _.some = function (collection, func) {
 */
 
 _.reduce = function (array, func, seed) {
-    let preResult
-    let result
-    for (let i = 0; i < array.length; i++) {
-        if (i === 0 ) {
-            preResult = func(seed, array[i], i)
-        }
-        if(seed)
-        result = func(preResult, array[i], i)
+    // create a varible store starting index to = 0
+    let start = 0
+    let result = seed
+    if (seed === undefined) {
+        // set the starting index to 1
+        start = 1
+        result = array[0]
+    }
 
+    for (let i = start; i < array.length; i++) {
+
+        result = func(result, array[i], i)
 
     }
 

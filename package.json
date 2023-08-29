@@ -1,9 +1,9 @@
 {
   "name": "underpants",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "description": "Functional Functions for Fun",
-  "main": "data.js",
+  "main": "underpants.js",
   "directories": {
     "test": "test"
   },
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/OperationSpark/underpants.git"
+    "url": "https://github.com/SpecTrail5/underpants.git"
   },
-  "author": "jfraboni",
+  "author": "SpecTrail5",
   "license": "CC",
   "bugs": {
-    "url": "https://github.com/OperationSpark/underpants/issues"
+    "url": "https://github.com/SpecTrail5/underpants/issues"
   },
-  "homepage": "https://github.com/OperationSpark/underpants",
+  "homepage": "https://github.com/SpecTrail5/underpants",
   "devDependencies": {
     "chai": "^3.5.0",
     "istanbul": "^0.4.5",

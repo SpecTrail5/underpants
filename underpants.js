@@ -605,9 +605,16 @@ _.reduce = function (array, func, seed) {
 *   _.extend(data, {a:"two"}); -> data now equals {a:"two"}
 */
 
-_.extend = function (obj1, ...objects) {
+_.extend = function (obj1, ...obj2) {
+    // loop through obj2
+    //console.log(...obj2)
+    // for(let key in obj2){
+    //     console.log(obj2)
+    //     obj1[key] = obj2[key]
+    // }
+    // assign the properties of obj2 to obj1
+    obj1 = Object.assign(obj1, ...obj2)
 
-    obj1 = Object.assign(objects)
 
     return obj1
 }
